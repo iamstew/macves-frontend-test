@@ -34,7 +34,7 @@ const SidebarWrapper = styled.aside`
     --color-sidebar-background-${(props) => props.theme?.current}-default
   );
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 `;
 
 const SidebarToggleButton = styled.button`
@@ -46,6 +46,8 @@ const SidebarToggleButton = styled.button`
   width: 28px;
   height: 28px;
   border-radius: 50%;
+
+  cursor: pointer;
 
   color: var(--color-text-${(props) => props.theme?.current}-default);
   background: var(
@@ -59,7 +61,7 @@ const SidebarToggleButton = styled.button`
     );
   }
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 `;
 
 const SidebarHead = styled.div`
@@ -84,10 +86,10 @@ const CompanyName = styled.span`
   color: var(--color-text-logo-${(props) => props.theme?.current}-default);
   opacity: 0;
   overflow: hidden;
-  transition: all 0.3s linear;
   ${SidebarWrapper}.opened & {
     opacity: 1;
   }
+  transition: all 0.2s linear;
 `;
 
 const SidebarBody = styled.div`
@@ -132,7 +134,7 @@ const SidebarLink = styled.a`
     );
   }
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 `;
 
 const SidebarLinkText = styled.span`
@@ -145,7 +147,7 @@ const SidebarLinkText = styled.span`
   ${SidebarWrapper}.opened & {
     opacity: 1;
   }
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 `;
 
 const SidebarBottom = styled.div`
